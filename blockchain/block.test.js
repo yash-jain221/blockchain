@@ -46,7 +46,7 @@ describe('Block',()=>{
         });
 
         it('sets `data`',()=>{
-            expect(minedBlock.lastHash).toEqual(lastBlock.hash);
+            expect(minedBlock.data).toEqual(data);
         })
 
         it('sets `timestamp`',()=>{

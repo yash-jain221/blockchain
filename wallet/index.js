@@ -33,7 +33,7 @@ class Wallet{
                 if(transaction.input.address === address){
                     hasConductedTransaction = true
                 }
-                const addressOutput = transaction.outputMap[address]
+                let addressOutput = transaction.outputMap[address]
                 if(addressOutput){
                     totalBalance = totalBalance + addressOutput;
                 }
